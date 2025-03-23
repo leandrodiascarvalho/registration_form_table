@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Livros</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sistema de Registro de Livros</h1>
+        </header>
+
+        <main>
+            <section class="table-section">
+                <h2>Livros Registrados</h2>
+                <table id="books-table">
+                    <caption>Lista de livros registrados no sistema</caption>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Autor</th>
+                            <th>Ano</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12345678</td>
+                            <td>Dom Casmurro</td>
+                            <td>Machado de Assis</td>
+                            <td>1899</td>
+                            <td>Maria Silva</td>
+                            <td><a href="mailto:maria.silva@email.com">maria.silva@email.com</a></td>
+                            <td>(11) 98765-4321</td>
+                        </tr>
+                        <tr>
+                            <td>23456789</td>
+                            <td>O Cortiço</td>
+                            <td>Aluísio Azevedo</td>
+                            <td>1890</td>
+                            <td>João Santos</td>
+                            <td><a href="mailto:joao.santos@email.com">joao.santos@email.com</a></td>
+                            <td>(21) 99876-5432</td>
+                        </tr>
+                        <tr>
+                            <td>34567890</td>
+                            <td>Grande Sertão: Veredas</td>
+                            <td>João Guimarães Rosa</td>
+                            <td>1956</td>
+                            <td>Ana Oliveira</td>
+                            <td><a href="mailto:ana.oliveira@email.com">ana.oliveira@email.com</a></td>
+                            <td>(31) 97654-3210</td>
+                        </tr>
+                        <tr>
+                            <td>45678901</td>
+                            <td>Memórias Póstumas de Brás Cubas</td>
+                            <td>Machado de Assis</td>
+                            <td>1881</td>
+                            <td>Pedro Costa</td>
+                            <td><a href="mailto:pedro.costa@email.com">pedro.costa@email.com</a></td>
+                            <td>(41) 96543-2109</td>
+                        </tr>
+                        <tr>
+                            <td>67890123</td>
+                            <td>Capitães da Areia</td>
+                            <td>Jorge Amado</td>
+                            <td>1937</td>
+                            <td>Rafaela Gomes</td>
+                            <td><a href="mailto:rafaela.gomes@email.com">rafaela.gomes@email.com</a></td>
+                            <td>(71) 98765-0987</td>
+                        </tr>
+                        <tr>
+                            <td>78901234</td>
+                            <td>Vidas Secas</td>
+                            <td>Graciliano Ramos</td>
+                            <td>1938</td>
+                            <td>Carlos Mendes</td>
+                            <td><a href="mailto:carlos.mendes@email.com">carlos.mendes@email.com</a></td>
+                            <td>(82) 97654-3456</td>
+                        </tr>
+                        <tr>
+                            <td>89012345</td>
+                            <td>Iracema</td>
+                            <td>José de Alencar</td>
+                            <td>1865</td>
+                            <td>Juliana Lima</td>
+                            <td><a href="mailto:juliana.lima@email.com">juliana.lima@email.com</a></td>
+                            <td>(85) 99876-2345</td>
+                        </tr>
+                        <tr>
+                            <td>90123456</td>
+                            <td>A Hora da Estrela</td>
+                            <td>Clarice Lispector</td>
+                            <td>1977</td>
+                            <td>Ricardo Sousa</td>
+                            <td><a href="mailto:ricardo.sousa@email.com">ricardo.sousa@email.com</a></td>
+                            <td>(81) 98765-5678</td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">Informações especiais - Entre em contato com a administração</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6">Total de registros: 10</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section class="form-section">
+                <h2>Formulário de Inscrição</h2>
+                <form id="subscription-form" action="#" method="POST">
+                    <fieldset>
+                        <legend>Informações do Livro</legend>
+                        <div class="form-group">
+                            <label for="bookTitle">Título do Livro:</label>
+                            <input type="text" id="bookTitle" name="bookTitle" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="author">Autor:</label>
+                            <input type="text" id="author" name="author" required>
+               z         </div>
+                        <div class="form-group">
+                            <label for="year">Ano:</label>
+                            <input type="number" id="year" name="year" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Informações do Usuário</legend>
+                        <div class="form-group">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" id="submit-btn">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Sistema de Registro de Livros</p>
+        </footer>
+    </div>
+</body>
+</html>

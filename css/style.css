@@ -1,0 +1,186 @@
+/* Reset e Variáveis Globais */
+:root {
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --header-color: #2c3e50;
+    --primary-color: #3498db;
+    --primary-hover-color: #2980b9;
+    --border-color: #ddd;
+    --even-row-bg: #f2f2f2;
+    --hover-row-bg: #e3f2fd;
+    --footer-text-color: #7f8c8d;
+    --section-bg: #fff;
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --special-info-bg: #fceabb;
+    --special-info-text: #d9534f;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--border-color);
+}
+
+h1 {
+    color: var(--header-color);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: var(--section-bg);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+/* Table Styles */
+.table-section {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: var(--even-row-bg);
+}
+
+tr:hover {
+    background-color: var(--hover-row-bg);
+    transition: background-color 0.3s ease;
+}
+
+tfoot {
+    font-weight: bold;
+    background-color: #ecf0f1;
+}
+
+/* Special Info Row */
+#books-table td[colspan="7"] {
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--special-info-bg);
+    color: var(--special-info-text);
+    font-size: 1.1em;
+    padding: 15px;
+}
+
+/* Form Styles */
+.form-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--header-color);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primary-hover-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    border-top: 2px solid var(--border-color);
+    color: var(--footer-text-color);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    th, td {
+        padding: 8px 10px;
+    }
+
+    input, textarea, button {
+        padding: 10px;
+    }
+}
+
+/* Email link style */
+a[href^="mailto:"] {
+    text-decoration: none;
+}
+
+/* Focus style */
+input:focus, textarea:focus, button:focus {
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+}
