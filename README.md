@@ -32,7 +32,7 @@ Crie um formulário de inscrição abaixo da tabela que solicite as seguintes in
  Curso front-end Refatorando
 
 ## Desafio dos Módulos 8 e 9: Tabela de Registros e Formulário de Inscrição
-    Para este desafio, você estará criando uma página web que contenha uma tabela de registros e um formulário de inscrição.
+Para este desafio, você estará criando uma página web que contenha uma tabela de registros e um formulário de inscrição.
 
 ### Parte 1:Tabela de Registros
 1.Cie uma tabela HTML que inclua as seguintes colunas: 
